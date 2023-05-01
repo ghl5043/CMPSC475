@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Menu</string>
+    <string name="settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="dark_theme">Change the current theme to dark mode.</string>
+    <string name="pref_dark_theme">Enable Dark Mode</string>
+</resources>

@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/orderpic"
+        android:layout_width="379dp"
+        android:layout_height="106dp"
+        android:src="@drawable/orderpic"
+        app:layout_constraintBottom_toTopOf="@id/orderpictext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:onClick="startOrder"/>
+
+        <TextView
+            android:id="@+id/orderpictext"
+            android:layout_width="379dp"
+            android:layout_height="71dp"
+            android:textSize="40dp"
+            android:text="Start Order"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/orderpic"
+            app:layout_constraintStart_toStartOf="@id/orderpic"
+            app:layout_constraintTop_toBottomOf="@id/orderpic"
+            app:layout_constraintBottom_toTopOf="@id/historypic"
+            android:onClick="startOrder"/>
+
+        <ImageView
+            android:id="@+id/historypic"
+            android:layout_width="379dp"
+            android:layout_height="106dp"
+            android:src="@drawable/order_history"
+            app:layout_constraintBottom_toTopOf="@id/historytext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderpictext"
+            android:onClick="viewHistory"/>
+
+    <TextView
+        android:id="@+id/historytext"
+        android:layout_width="379dp"
+        android:layout_height="71dp"
+        android:textSize="40dp"
+        android:text="View Order History"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/historypic"
+        app:layout_constraintStart_toStartOf="@id/historypic"
+        app:layout_constraintTop_toBottomOf="@id/historypic"
+        app:layout_constraintBottom_toTopOf="@id/menupic"
+        android:onClick="viewHistory"/>
+    <ImageView
+        android:layout_width="379dp"
+        android:layout_height="106dp"
+        android:id="@+id/menupic"
+        android:src="@drawable/menupic"
+        app:layout_constraintTop_toBottomOf="@+id/historytext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="showMenu"
+        />
+    <TextView
+        android:layout_width="379dp"
+        android:layout_height="71dp"
+        android:id="@+id/menupictext"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:text="View Menu"
+        app:layout_constraintEnd_toEndOf="@id/menupic"
+        app:layout_constraintStart_toStartOf="@id/menupic"
+        app:layout_constraintTop_toBottomOf="@id/menupic"
+        android:onClick="showMenu"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "449648224436",
+    "project_id": "cmpsc475warrenroadcapgabele",
+    "storage_bucket": "cmpsc475warrenroadcapgabele.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449648224436:android:7e40e8d9538d37ebf0cfe1",
+        "android_client_info": {
+          "package_name": "com.example.cmpsc475projectwarrenroadcapgabele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449648224436-4qku46cumsr12or0hssn21mj2un9dar5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQn7SQcBi2TOz5C7HGeknmLzmW5lOtCwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449648224436-4qku46cumsr12or0hssn21mj2un9dar5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
