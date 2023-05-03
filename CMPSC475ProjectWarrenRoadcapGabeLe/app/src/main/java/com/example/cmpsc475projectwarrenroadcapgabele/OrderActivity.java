@@ -38,6 +38,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderActivity extends AppCompatActivity {
@@ -245,12 +246,18 @@ public class OrderActivity extends AppCompatActivity {
     public void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
         String check = savedInstanceState.getString("price");
+        ArrayList<String> order_items = savedInstanceState.getStringArrayList("current_order");
+        Double restored_price = savedInstanceState.getDouble("current_price");
         current_price.setText(check);
+        current_order.order_items = order_items;
+        current_order.order_price = restored_price;
     }
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // code to save instance state goes here
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putString("price", current_price.getText().toString());
+        savedInstanceState.putStringArrayList("current_order", current_order.order_items);
+        savedInstanceState.putDouble("current_price", current_order.order_price);
     }
 }
